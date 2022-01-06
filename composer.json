@@ -1,0 +1,31 @@
+{
+    "name": "erkenes/flow-honeypot-form-field",
+    "description": "Spam protection using a honeypot field",
+    "type": "neos-package",
+    "keywords": [
+        "flow",
+        "neos",
+        "forms",
+        "spamprotection",
+        "honeypot",
+        "flow-framework"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2",
+        "neos/flow": "*"
+    },
+    "suggest": {
+        "neos/form": "Adds the Form Framework to Flow."
+    },
+    "autoload": {
+        "psr-4": {
+            "Erk\\Flow\\HoneypotFormField\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Erk.Flow.HoneypotFormField"
+        }
+    }
+}

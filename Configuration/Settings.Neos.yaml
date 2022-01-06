@@ -1,0 +1,13 @@
+Neos:
+  Form:
+    presets:
+      'default':
+        formElementTypes:
+          'Erk.Flow.HoneypotFormField:HoneypotField':
+            superTypes:
+              'Neos.Form:FormElement': true
+              'Neos.Form:TextMixin': true
+        finisherPresets:
+          'Erk.Flow.HoneypotFormField:SpamDetectionFinisher':
+            implementationClassName: Erk\Flow\HoneypotFormField\Finisher\SpamDetectionFinisher
+            options: {  }
